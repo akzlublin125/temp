@@ -13,6 +13,6 @@ public class ScanResultApiServiceDefault implements ScanResultApiService {
     @Override
     @Async
     public void justTest() {
-        LOGGER.info("async call");
+        LOGGER.info("async call " + Thread.currentThread().getId());
     }
 }
